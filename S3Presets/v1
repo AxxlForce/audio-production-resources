@@ -1,0 +1,4724 @@
+"v1" {
+version 5
+EZX "SL-SUPERIOR_DRUMMER_3"
+xmics {
+}
+kit {
+s3kit
+"KickR" "SL-SUPERIOR_DRUMMER_3" "KickR" "Kick73" "Felt" 1
+"Snare" "SL-SUPERIOR_DRUMMER_3" "Snare" "Snare06" "Drumsticks" 1
+"Hats" "SL-SUPERIOR_DRUMMER_3" "Hats" "Hats3" "Drumsticks" 0
+"Tom1" "SL-SUPERIOR_DRUMMER_3" "Tom2" "Tom3-2" "Drumsticks" 1
+"Tom2" "SL-SUPERIOR_DRUMMER_3" "Tom3" "Tom3-3" "Drumsticks" 1
+"Tom3" "SL-SUPERIOR_DRUMMER_3" "Tom3" "Tom3-4" "Drumsticks" 1
+"Tom4" "SL-SUPERIOR_DRUMMER_3" "Tom4" "Tom3-5" "Drumsticks" 1
+"Tom5" "SL-SUPERIOR_DRUMMER_3" "Tom5" "Tom3-6" "Drumsticks" 1
+"Cymbal1" "SL-SUPERIOR_DRUMMER_3" "Cymbal2" "cymbal1_3" "Drumsticks" 0
+"Cymbal2" "SL-SUPERIOR_DRUMMER_3" "Cymbal2" "cymbal2_3" "Drumsticks" 0
+"Cymbal3" "SL-SUPERIOR_DRUMMER_3" "Cymbal1" "cymbal2_1" "Drumsticks" 0
+"Cymbal4" "SL-SUPERIOR_DRUMMER_3" "Cymbal4" "cymbal6_4" "Drumsticks" 0
+"Cymbal5" "SL-SUPERIOR_DRUMMER_3" "Cymbal5" "cymbal8_5" "Drumsticks" 0
+"Cymbal6" "SL-SUPERIOR_DRUMMER_3" "Cymbal6" "cymbal1_6" "Drumsticks" 0
+}
+instbox 0 "Kick" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "KickR"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"KickR" 4 4 4
+}
+drum "Kick73"  "Felt" 1
+pads {
+pad kickR {
+usemic "Kick-In" "Kick-Out" "Kick-Sub" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.742493 "AmbNear" "AmbMid" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+decay 0.0173527
+sustain 0.775
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad kickO {
+usemic "Kick-In" "Kick-Out" "Kick-Sub" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.742493 "AmbNear" "AmbMid" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+decay 0.0173527
+sustain 0.775
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias kickO 36
+alias kickR 35
+}
+}
+}
+instbox 1 "Snare" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Snare"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Snare" 4 4 4 {
+"snareR" 6 6 6
+}
+}
+drum "Snare06"  "Drumsticks" 1
+pads {
+pad shakeback {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad shakebackE {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+futureimmediate
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad shake {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad shakeE {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+futureimmediate
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareTH {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareMT {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareRF {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+fadetime 0.2
+faderelaxtime 1.74205
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareFL {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareMC {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.501187
+maxpoly 8
+blocksounds
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareFO {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.501187
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareRO {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareSL {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareFX {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareR {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.501187
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad snareCtrl {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+}
+pad snareTrig {
+usemic "SnareTop" "SnareBottom" "SnareBottomR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+fade 1
+fadetime 0.370108
+faderelaxtime 1.74205
+fadeonset 0.370008
+decay 0.0121069
+sustain 0.8625
+pitch 0.890899
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias snareTrig 6
+alias snareCtrl CC16
+alias snareR 38
+alias snareFX 40
+alias snareSL 37 1 2 3
+alias snareRO 71
+alias snareFO 33
+alias snareMC 125
+alias snareFL 69
+alias snareRF 39
+alias snareMT 68
+alias snareTH 4
+alias shakeE 67
+alias shake 127
+alias shakebackE 66
+alias shakeback 126
+}
+}
+}
+instbox 2 "Hi-Hat" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Hats"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Hats" 4 4 4 {
+"hatsCL" 6 6 6
+"hatsTP" 6 6 6
+"hatsSQH" 6 6 6
+"hatsPLO" 2 2 4
+}
+}
+drum "Hats3"  "Drumsticks" 0
+pads {
+pad hatsM5 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsM4 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsM3 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsM2 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsM1 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsM0 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsBM {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsTM {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB5 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB4 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB3 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB2 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB1 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsB0 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsBL {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsTB {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT5 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT4 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT3 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT2 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT1 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsT0 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsTP {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsTT {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsO5 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsO4 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsO3 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsO2 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsO1 {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsLO {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsCL {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsCT {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsPL {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsPLO {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsSQH {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsCtrl {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.0629921 0.0629921
+2 0.23622 0.23622
+3 0.472441 0.472441
+4 0.708661 0.708661
+5 0.826772 0.826772
+6 0.944882 0.944882
+7 0.992126 0.992126
+8 1 1
+}
+}
+pad hatsTrig {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsTipTrig {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsBellTrig {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad hatsShaftTrig {
+usemic "Hats" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Oh-Sanken" 0.430815 "Front" 0.170917 "Front-C" "Rear" "FrontHeight" 0.235904 "RearHeight" "RearHeightAlt" 0.170917
+velocityknee L 5
+cycle S 
+velvol
+sendnoteoff
+maxpoly 8
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias hatsShaftTrig 9
+alias hatsBellTrig 20
+alias hatsTipTrig 19 8
+alias hatsTrig 18 7
+alias hatsCtrl CC4 CC1
+alias hatsSQH 65
+alias hatsPLO 23
+alias hatsPL 21 10 44
+alias hatsCT 62
+alias hatsCL 22
+alias hatsLO 64
+alias hatsO1 24
+alias hatsO2 25 46
+alias hatsO3 26
+alias hatsO4 60
+alias hatsTT 63
+alias hatsTP 61 11 42
+alias hatsT0 12
+alias hatsT1 13
+alias hatsT2 14
+alias hatsT3 15
+alias hatsT4 16
+alias hatsT5 17
+alias hatsBL 119
+alias hatsB0 120
+alias hatsB1 121
+alias hatsB2 122
+alias hatsB3 123
+alias hatsB4 124
+}
+}
+}
+instbox 3 "Racktom 1" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Tom2"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 6
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Tom2" 4 4 4
+}
+drum "Tom3-2"  "Drumsticks" 1
+pads {
+pad tom2MT {
+usemic "SnareBottom" "SnareBottomR" "Tom2" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom2RO {
+usemic "SnareBottom" "SnareBottomR" "Tom2" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom2FX {
+usemic "SnareBottom" "SnareBottomR" "Tom2" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom2R {
+usemic "SnareBottom" "SnareBottomR" "Tom2" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.398107
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+alias tom2R 48
+alias tom2FX 82
+alias tom2RO 81
+}
+}
+}
+instbox 4 "Racktom 2" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Tom3"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 7
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Tom3" 4 4 4
+}
+drum "Tom3-3"  "Drumsticks" 1
+pads {
+pad tom3MT {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Hats" 1.10863 "Oh-Sanken" 0.926552 "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" 0.474229 "Rear" "FrontHeight" 0.440907 "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 1.85889
+veltrafooff
+}
+pad tom3RO {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Hats" 1.10863 "Oh-Sanken" 0.926552 "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" 0.474229 "Rear" "FrontHeight" 0.440907 "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+}
+pad tom3FX {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Hats" 1.10863 "Oh-Sanken" 0.926552 "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" 0.474229 "Rear" "FrontHeight" 0.440907 "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+}
+pad tom3R {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Hats" 1.10863 "Oh-Sanken" 0.926552 "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" 0.474229 "Rear" "FrontHeight" 0.440907 "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.398107
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+}
+alias tom3R 47
+alias tom3FX 80
+alias tom3RO 79
+}
+}
+}
+instbox 5 "Racktom 3" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Tom3"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Tom3" 4 4 4
+}
+drum "Tom3-4"  "Drumsticks" 1
+pads {
+pad tom3MT {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 1.85889
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom3RO {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom3FX {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom3R {
+usemic "SnareBottom" "SnareBottomR" "Tom3" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.398107
+maxpoly 8
+fade 1
+fadetime 1.85889
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+alias tom3R 45
+alias tom3FX 78
+alias tom3RO 77
+}
+}
+}
+instbox 6 "Floortom 1" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Tom4"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Tom4" 4 4 4
+}
+drum "Tom3-5"  "Drumsticks" 1
+pads {
+pad tom4MT {
+usemic "SnareBottom" "SnareBottomR" "Tom4" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom4RO {
+usemic "SnareBottom" "SnareBottomR" "Tom4" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom4FX {
+usemic "SnareBottom" "SnareBottomR" "Tom4" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom4R {
+usemic "SnareBottom" "SnareBottomR" "Tom4" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.398107
+maxpoly 8
+fade 1
+fadetime 1.85889
+varipitchnodes 1000 1 3456 4 0 1 0 1 0 1 0 1 0 1 0 1
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+alias tom4R 43
+alias tom4FX 75
+alias tom4RO 74
+}
+}
+}
+instbox 7 "Floortom 2" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Tom5"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Tom5" 4 4 4
+}
+drum "Tom3-6"  "Drumsticks" 1
+pads {
+pad tom5MT {
+usemic "SnareBottom" "SnareBottomR" "Tom5" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fade 1
+fadetime 1.03487
+pitchtype 1
+pitchoff
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom5RO {
+usemic "SnareBottom" "SnareBottomR" "Tom5" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.03487
+pitchtype 1
+pitchoff
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom5FX {
+usemic "SnareBottom" "SnareBottomR" "Tom5" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fade 1
+fadetime 1.03487
+pitchtype 1
+pitchoff
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+pad tom5R {
+usemic "SnareBottom" "SnareBottomR" "Tom5" "AmbNear" "AmbNearR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+leakvolume "Ambience-R88" 0.440907 "AmbNear" "Front" "Front-C" "Rear" "FrontHeight" "RearHeight" "RearHeightAlt"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 0.398107
+maxpoly 8
+fade 1
+fadetime 1.03487
+pitchtype 1
+pitchoff
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+2 0.415584 1
+3 0.411255 1
+}
+}
+alias tom5R 41
+alias tom5FX 73
+alias tom5RO 72
+}
+}
+}
+instbox 8 "Cymbal 1" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal2"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal2" 2 3 4 {
+"crash2TL" 4 4 4
+}
+}
+drum "cymbal1_3"  "Drumsticks" 0
+pads {
+pad crash2FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash2M 83
+alias crash2 27 86
+alias crash2RT 84
+alias crash2RD 87
+alias crash2BL 85
+alias crash2BT 88
+}
+}
+}
+instbox 9 "Cymbal 2" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal2"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal2" 2 2 4 {
+"crash2TL" 4 4 4
+}
+}
+drum "cymbal2_3"  "Drumsticks" 0
+pads {
+pad crash2FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash2TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash2M 50 94
+alias crash2 49 28 91
+alias crash2RT 89
+alias crash2RD 92
+alias crash2BL 90
+alias crash2BT 93
+}
+}
+}
+instbox 10 "Cymbal 3" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal1"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal1" 2 3 4 {
+"crash1TL" 4 4 4
+}
+}
+drum "cymbal2_1"  "Drumsticks" 0
+pads {
+pad crash1FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash1TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash1 55 29 98
+alias crash1M 56 95
+alias crash1RT 96
+alias crash1RD 99
+alias crash1BL 97
+alias crash1BT 100
+}
+}
+}
+instbox 11 "Ride" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal4"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal4" 2 2 4 {
+"crash4TL" 4 4 4
+}
+}
+drum "cymbal6_4"  "Drumsticks" 0
+pads {
+pad crash4FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash4TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash4M 118
+alias crash4 59 30 115
+alias crash4RT 51 113
+alias crash4RD 116
+alias crash4BL 53 114
+alias crash4BT 117
+alias crash4CS 76
+}
+}
+}
+instbox 12 "Cymbal 4" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal5"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal5" 2 2 4 {
+"crash5TL" 4 4 4
+}
+}
+drum "cymbal8_5"  "Drumsticks" 0
+pads {
+pad crash5FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash5TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash5M 58 106
+alias crash5 57 31 103
+alias crash5RT 101
+alias crash5RD 104
+alias crash5BL 102
+alias crash5BT 105
+}
+}
+}
+instbox 13 "Cymbal 5" {
+xpad 0 SL-SUPERIOR_DRUMMER_3 {
+pos "Cymbal6"
+mastermics {
+nrmaster 0
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 6
+"Tom1" "Racktom 1" 0 7
+"Tom2" "Racktom 2" 0 8
+"Tom3" "Racktom 3" 0 9
+"Tom4" "Floortom 1" 0 10
+"Tom5" "Floortom 2" 0 11
+"Oh-Beyer" "OH Dyn" 1 12
+"Oh-Sanken" "OH Cond" 1 14
+"Ambience-R88" "Amb Ribbon" 1 16
+"AmbNear" "Amb Near" 1 18
+"AmbMid" "Amb Mid" 1 20
+"Front" "Front L/R" 1 22
+"Front-C" "Center" 0 24
+"Rear" "Surround L/R" 1 26
+"FrontHeight" "Front Height" 1 28
+"RearHeight" "Rear Height" 1 30
+"RearHeightAlt" "Rear Ht Wide" 1 32
+}
+micmap {
+nrmaster 36
+close  0 0 0
+"Kick-In" "Kick In" 0 0
+"Kick-Out" "Kick Out" 0 1
+"Kick-Sub" "Kick Sub" 0 2
+"SnareTop" "Snare Top" 0 3
+"SnareBottom" "Snare Bottom" 1 4
+"Hats" "Hi-Hat" 0 5
+"Tom1" "Racktom 1" 0 6
+"Tom2" "Racktom 2" 0 7
+"Tom3" "Racktom 3" 0 8
+"Tom4" "Floortom 1" 0 9
+"Tom5" "Floortom 2" 0 10
+"Oh-Beyer" "OH Dyn" 1 11
+"Oh-Sanken" "OH Cond" 1 12
+"Ambience-R88" "Amb Ribbon" 1 13
+"AmbNear" "Amb Near" 1 14
+"AmbMid" "Amb Mid" 1 15
+"Front" "Front L/R" 1 16
+"Front-C" "Center" 0 17
+"Rear" "Surround L/R" 1 18
+"FrontHeight" "Front Height" 1 19
+"RearHeight" "Rear Height" 1 20
+"RearHeightAlt" "Rear Ht Wide" 1 21
+}
+laylims {
+"Cymbal6" 2 2 4 {
+"crash6TL" 4 4 4
+}
+}
+drum "cymbal1_6"  "Drumsticks" 0
+pads {
+pad crash6FX {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6CS {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6BT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6BL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6RD {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6RT {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+blocksounds
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6 {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+autoattackctrl 1
+maxpoly 8
+fadestart 0
+blocknoteoff 1
+fadetime 0.35
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6M {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+ cycle NOT S 
+cycle NOT H 
+maxpoly 8
+aftertouchrelay
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+pad crash6TL {
+usemic "Oh-Beyer" "Oh-BeyerR" "Oh-Sanken" "Oh-SankenR" "FrontHeight" "FrontHeightR" "RearHeight" "RearHeightR"
+velocityknee L 5
+cycle S 
+velvol
+maxpoly 8
+veltrafooff
+curve {
+0 0 0
+1 0.639654 1
+}
+}
+alias crash6M 54 107
+alias crash6 52 32 110
+alias crash6RT 108
+alias crash6RD 111
+alias crash6BL 109
+alias crash6BT 112
+}
+}
+}
+mixer {
+latcomp
+Kick-In {
+pan 0.5
+volume 1
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.165705
+15 0.714086
+16 1
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.593795
+28 0.12078
+29 0.5
+30 0
+36 0
+37 0
+38 0
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 1 {
+sidechain ""
+effect 11
+active 1
+0 0.585
+1 0
+2 0.603694
+3 0.5
+4 0.5
+5 1
+6 0.5
+7 0
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 16
+}
+Kick-Out {
+pan 0.5
+volume 0.622869
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.680375
+2 0.239441
+3 0.5
+4 0
+10 0
+11 0
+12 0
+25 0.75
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 16
+}
+Kick-Sub {
+pan 0.5
+volume 0.203135
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.213805
+2 0.567879
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.00216449
+15 0.803082
+16 0.5
+17 0
+23 0
+24 0
+25 0
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 16
+}
+SnareTop {
+pan 0.5
+volume 1.05254
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.555315
+15 0.294534
+16 0.5
+17 0
+23 0
+24 0
+25 0
+38 0.75
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+nobleed 0
+xtrafade 0
+leakvol 0.0485289
+solo 0
+mute 0
+route 17
+}
+SnareBottom {
+pan 0
+volume 0.258369
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 0.0485289
+solo 0
+mute 0
+route 17
+}
+SnareBottomR {
+pan 1
+volume 0.258369
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 0.0485289
+solo 0
+mute 0
+route 17
+}
+Hats {
+pan 0.375
+volume 1.26858
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 11
+active 1
+0 0.325
+1 0.12
+2 0
+3 0.205
+4 0.5
+5 1
+6 0.5
+7 0
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.497595
+2 0.459812
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.396585
+15 0.822153
+16 0.791426
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.569745
+28 0.932338
+29 0.5
+30 0
+36 0
+37 0
+38 0
+39 0.444444
+40 0.266715
+41 0.328437
+42 0.5
+43 0
+49 0
+50 0
+51 0
+52 0
+53 0.257095
+54 0.298772
+55 0.5
+56 0.2
+62 0
+63 0
+64 0
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+Tom1 {
+pan 0.194444
+volume 0.975144
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 18
+}
+Tom2 {
+pan 0.361111
+volume 0.987311
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 18
+}
+Tom3 {
+pan 0.527778
+volume 0.987311
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 18
+}
+Tom4 {
+pan 0.694444
+volume 0.987311
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 18
+}
+Tom5 {
+pan 0.833333
+volume 0.987311
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.704425
+2 0.146208
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.348485
+15 0.447099
+16 0.5
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.569745
+28 0.781893
+29 0.650879
+30 0
+36 0
+37 0
+38 0
+39 0.444444
+40 0.334055
+41 0.523381
+42 0.745605
+43 0
+49 0
+50 0
+51 0
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.537482
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 18
+}
+Oh-Beyer {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 0
+}
+Oh-BeyerR {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+Oh-Sanken {
+pan 0
+volume 2.39585
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.396585
+15 0.481002
+16 0.5
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.579365
+28 0.873008
+29 0.5
+30 0
+36 0
+37 0
+38 0
+39 0.444444
+40 0.310005
+41 0.233085
+42 0.5
+43 0
+49 0
+50 0
+51 0
+52 0.444444
+53 0.439875
+54 0.675945
+55 0.75
+56 0
+62 0
+63 0
+64 0
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 1 {
+sidechain ""
+effect 11
+active 1
+0 0.295
+1 0.06
+2 0
+3 0.46
+4 0.5
+5 1
+6 0.42
+7 0
+}
+effect 2 {
+sidechain ""
+effect 42
+active 1
+0 0.5
+1 0
+2 0.595
+3 1
+4 0.195
+5 0.325
+6 0
+7 1
+8 0
+9 0.5
+10 1
+11 0
+12 1
+13 0
+14 1
+}
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+Oh-SankenR {
+pan 1
+volume 2.39585
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+Ambience-R88 {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+Ambience-R88R {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+AmbNear {
+pan 0
+volume 1
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+AmbNearR {
+pan 1
+volume 1
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+AmbMid {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+AmbMidR {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+Front {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+FrontR {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+Front-C {
+pan 0.5
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+dummy {
+pan 0.5
+volume 1
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+Rear {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+RearR {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+FrontHeight {
+pan 0
+volume 0.283522
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+FrontHeightR {
+pan 1
+volume 0.283522
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+RearHeight {
+pan 0
+volume 0.229087
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+RearHeightR {
+pan 1
+volume 0.229087
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+RearHeightAlt {
+pan 0
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+hidden
+route 19
+}
+RearHeightAltR {
+pan 1
+volume 0
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 19
+}
+Preview {
+pan 0
+volume 1
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+PreviewR {
+pan 1
+volume 1
+phasereverse 0
+nobleed 0
+xtrafade 0
+leakvol 1
+solo 0
+mute 0
+route 0
+}
+buss 0 {
+pan 0
+volume 0.826497
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 11
+active 1
+0 0.645
+1 0.345
+2 0.0786944
+3 0.275
+4 0.5
+5 1
+6 0.5
+7 0
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.285955
+2 0.413195
+3 0.617188
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.588985
+15 0.137732
+16 0.5
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.598605
+28 0.792488
+29 0.5
+30 0
+36 0
+37 0
+38 0
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+solo 0
+mute 0
+username "Kick"
+route 0
+send 9 {
+active 1
+pan 0
+volume 1
+post fader
+}
+}
+buss 1 {
+pan 1
+volume 0.826497
+phasereverse 0
+solo 0
+mute 0
+route 0
+send 9 {
+active 1
+pan 1
+volume 1
+post fader
+}
+}
+buss 2 {
+pan 0
+volume 1.11176
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 11
+active 1
+0 0.495
+1 0.14
+2 0.628694
+3 0.345
+4 0.5
+5 1
+6 0.5
+7 0
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.5
+2 0.566323
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.425445
+15 0.601782
+16 0.705078
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.680375
+28 0.875127
+29 0.5
+30 0
+36 0
+37 0
+38 0
+39 0.444444
+40 0.564935
+41 0.733157
+42 0.558594
+43 0
+49 0
+50 0
+51 0
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+solo 0
+mute 0
+username "Snare"
+route 0
+send 8 {
+active 1
+pan 0
+volume 1
+post fader
+}
+send 9 {
+active 1
+pan 0
+volume 1
+post fader
+}
+}
+buss 3 {
+pan 1
+volume 1.11176
+phasereverse 0
+solo 0
+mute 0
+route 0
+send 8 {
+active 1
+pan 1
+volume 1
+post fader
+}
+send 9 {
+active 1
+pan 1
+volume 1
+post fader
+}
+}
+buss 4 {
+pan 0
+volume 1
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 11
+active 1
+0 0.48
+1 0.4
+2 0.548694
+3 0
+4 0.5
+5 1
+6 0.5
+7 0
+}
+effect 1 {
+sidechain ""
+effect 10
+active 1
+0 0.444444
+1 0.584175
+2 0.86877
+3 0.5
+4 0
+10 0
+11 0
+12 0
+13 0.444444
+14 0.271525
+15 0.425909
+16 0.537598
+17 0
+23 0
+24 0
+25 0
+26 0.444444
+27 0.478355
+28 0.332675
+29 0.5
+30 0
+36 0
+37 0
+38 0
+51 0.75
+64 0.75
+77 0.75
+90 0.75
+103 0.75
+116 0.75
+129 0.75
+130 0.5
+}
+effect 2 {
+sidechain ""
+effect 42
+active 1
+0 0.5
+1 0.2
+2 0.625
+3 1
+4 0.15
+5 0.17
+6 1
+7 1
+8 1
+9 0.645
+10 1
+11 0.605
+12 0
+13 0
+14 1
+}
+solo 0
+mute 0
+username "Toms"
+route 0
+send 9 {
+active 1
+pan 0
+volume 1
+post fader
+}
+}
+buss 5 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route 0
+send 9 {
+active 1
+pan 1
+volume 1
+post fader
+}
+}
+buss 6 {
+pan 0
+volume 1.10928
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 12
+active 1
+0 0.23299
+1 0.53402
+2 0.637371
+3 0.5
+4 0.435513
+5 0.333333
+6 0.60206
+7 0.541021
+8 0.15625
+9 0.5
+10 0.228333
+11 0.60206
+12 0.541021
+13 0.15625
+14 0.285
+15 0.548333
+16 0.60206
+17 0.541021
+18 0.15625
+19 0.27
+20 0.543333
+21 0.60206
+22 0.541021
+23 0.15625
+24 0.215
+25 0
+26 0
+27 0
+28 0
+29 1
+30 0
+}
+solo 0
+mute 0
+username "Ambience"
+route 0
+}
+buss 7 {
+pan 1
+volume 1.10928
+phasereverse 0
+solo 0
+mute 0
+route 0
+}
+buss 8 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 9 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 10 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 11 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 12 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 13 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 14 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 15 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 16 {
+pan 0
+volume 0.337887
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 14
+active 1
+0 0
+1 0.7
+2 0.555556
+3 0.145
+4 1
+5 0.5
+}
+solo 0
+mute 0
+username "Reverb"
+route 0
+}
+buss 17 {
+pan 1
+volume 0.337887
+phasereverse 0
+solo 0
+mute 0
+route 0
+}
+buss 18 {
+pan 0
+volume 0.654071
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 40
+active 1
+0 0.743333
+1 0.565368
+2 1
+3 0.065
+4 0.5
+5 1
+}
+solo 0
+mute 0
+username "Comp"
+route 0
+}
+buss 19 {
+pan 1
+volume 0.654071
+phasereverse 0
+solo 0
+mute 0
+route 0
+}
+buss 20 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 21 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 22 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 23 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 24 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 25 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 26 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 27 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 28 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 29 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+buss 30 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+route -1
+}
+buss 31 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+route -1
+}
+output 0 {
+pan 0
+volume 1
+phasereverse 0
+effect 0 {
+sidechain ""
+effect 41
+active 1
+0 0.3
+1 0.29
+2 0.7
+3 0.2
+4 0.29
+5 0.4
+6 0.73
+7 0.2
+8 1
+9 0.592486
+10 1
+}
+solo 0
+mute 0
+}
+output 1 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 2 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 3 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 4 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 5 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 6 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 7 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 8 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 9 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 10 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 11 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 12 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 13 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 14 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 15 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 16 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 17 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 18 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 19 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 20 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 21 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 22 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 23 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 24 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 25 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 26 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 27 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 28 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 29 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+output 30 {
+pan 0
+volume 1
+phasereverse 0
+solo 0
+mute 0
+hidden
+}
+output 31 {
+pan 1
+volume 1
+phasereverse 0
+solo 0
+mute 0
+}
+}
+macros {
+}
+}
