@@ -46,7 +46,7 @@ s3kit
 "Cymbal3" "SL-SUPERIOR_DRUMMER_3" "Cymbal2" "cymbal1_3" "Drumsticks" -1
 "Cymbal4" "SL-SUPERIOR_DRUMMER_3" "Cymbal4" "cymbal6_4" "Drumsticks" 1
 "Cymbal5" "SL-SUPERIOR_DRUMMER_3" "Cymbal6" "cymbal5_6" "Drumsticks" -1
-"Cymbal6" "SL-SUPERIOR_DRUMMER_3" "Cymbal6" "cymbal7_6" "Drumsticks" 1
+"Cymbal6" "SL-SUPERIOR_DRUMMER_3" "Cymbal6" "cymbal1_6" "Drumsticks" 0
 }
 instbox 0 "Kick" {
 xpad 0 SL-SUPERIOR_DRUMMER_3 {
@@ -2505,6 +2505,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.68252
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2517,6 +2518,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.68252
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2529,6 +2531,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.68252
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2541,6 +2544,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.68252
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2554,6 +2558,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.68252
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2567,6 +2572,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.68252
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2580,6 +2586,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.68252
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2592,6 +2599,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
  cycle NOT S 
 cycle NOT H 
+pvolume 1.68252
 maxpoly 8
 aftertouchrelay
 veltrafooff
@@ -2601,6 +2609,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.68252
 maxpoly 8
 veltrafooff
 }
@@ -2684,6 +2693,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2696,6 +2706,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2708,6 +2719,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2721,6 +2733,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2735,6 +2748,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2749,6 +2763,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.33844
 maxpoly 8
 blocksounds
 fadestart 0
@@ -2763,6 +2778,7 @@ velocityknee L 5
 cycle S 
 velvol
 autoattackctrl 1
+pvolume 1.33844
 maxpoly 8
 fadestart 0
 blocknoteoff 1
@@ -2775,6 +2791,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
  cycle NOT S 
 cycle NOT H 
+pvolume 1.33844
 maxpoly 8
 aftertouchrelay
 veltrafooff
@@ -2784,6 +2801,7 @@ usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
 velocityknee L 5
 cycle S 
 velvol
+pvolume 1.33844
 maxpoly 8
 veltrafooff
 }
@@ -2858,7 +2876,7 @@ laylims {
 "crash6TL" 4 4 4
 }
 }
-drum "cymbal7_6"  "Drumsticks" 1
+drum "cymbal1_6"  "Drumsticks" 0
 pads {
 pad crash6FX {
 usemic "Oh-Beyer" "Oh-BeyerR" "Ambience-R88" "Ambience-R88R"
@@ -3123,7 +3141,7 @@ sidechain ""
 effect 15
 active 1
 0 0.745
-1 0.255
+1 0.21
 }
 nobleed 0
 xtrafade -0
@@ -3299,7 +3317,7 @@ route 18
 }
 Tom5 {
 pan 0.772705
-volume 0.384025
+volume 0.431525
 phasereverse 0
 effect 0 {
 sidechain ""
@@ -3324,7 +3342,7 @@ active 1
 26 0.444444
 27 0.776575
 28 0.165278
-29 0.675781
+29 0.639648
 30 0
 36 0
 37 0
@@ -3343,7 +3361,7 @@ sidechain ""
 effect 15
 active 1
 0 0.77
-1 0.5
+1 0.56
 }
 nobleed 0
 xtrafade -0
@@ -3793,7 +3811,7 @@ route 0
 }
 buss 2 {
 pan 0
-volume 1
+volume 0.707946
 phasereverse 0
 effect 0 {
 sidechain ""
@@ -3893,15 +3911,27 @@ pan 0
 volume 1
 post fader
 }
+send 15 {
+active 1
+pan 0
+volume 1
+post fader
+}
 }
 buss 3 {
 pan 1
-volume 1
+volume 0.707946
 phasereverse 0
 solo 0
 mute 0
 route -1
 send 14 {
+active 1
+pan 1
+volume 1
+post fader
+}
+send 15 {
 active 1
 pan 1
 volume 1
@@ -3951,17 +3981,23 @@ active 1
 1 0.671547
 2 0.443886
 3 0.222109
-4 0.16
+4 0.365
 5 0
 }
 solo 0
 mute 0
 username "Toms"
 route 0
+send 14 {
+active 1
+pan 0
+volume 0.563671
+post fader
+}
 send 15 {
 active 1
 pan 0
-volume 0.577359
+volume 1
 post fader
 }
 }
@@ -3972,10 +4008,16 @@ phasereverse 0
 solo 0
 mute 0
 route -1
+send 14 {
+active 1
+pan 1
+volume 0.563671
+post fader
+}
 send 15 {
 active 1
 pan 1
-volume 0.577359
+volume 1
 post fader
 }
 }
@@ -4108,7 +4150,7 @@ route -1
 }
 buss 12 {
 pan 0
-volume 0.497224
+volume 0.630957
 phasereverse 0
 effect 0 {
 sidechain ""
@@ -4159,7 +4201,7 @@ route 0
 }
 buss 13 {
 pan 1
-volume 0.497224
+volume 0.630957
 phasereverse 0
 solo 0
 mute 0
@@ -4314,7 +4356,7 @@ route 0
 }
 buss 30 {
 pan 0
-volume 1
+volume 1.41254
 phasereverse 0
 effect 0 {
 sidechain ""
@@ -4338,7 +4380,7 @@ route 0
 }
 buss 31 {
 pan 1
-volume 1
+volume 1.41254
 phasereverse 0
 solo 0
 mute 0
