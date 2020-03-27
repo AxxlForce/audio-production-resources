@@ -1,0 +1,129 @@
+# MIDI note name map
+127
+126
+125
+124
+123
+122
+121
+120
+119
+118 Ride Mute Hit
+117
+116
+115
+114
+113
+112
+111
+110
+109
+108
+107
+106
+105
+104
+103
+102
+101
+100
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+87
+86 Cymbal 1 Crash
+85
+84
+83 Cymbal 1 Mute Hit
+82
+81
+80
+79
+78
+77
+76
+75
+74
+73
+72
+71
+70
+69
+68
+67
+66
+65
+64 Hat Open Edge 0
+63 FloorTom 2 Center
+62
+61
+60 Hat Open Edge 4
+59 Ride Crash
+58 Cymbal 4 Mute Hit
+57 Cymbal 4 Crash
+56 Cymbal 3 Mute Hit
+55 Cymbal 3 Crash
+54 Cymbal 5 Mute Hit
+53 Ride Bell Shank
+52 Cymbal 5 Crash
+51 Ride Bow Tip
+50 Cymbal 2 Mute Hit
+49 Cymbal 2 Crash
+48 Tom 1 Center
+47 Tom 2 Center
+46
+45 Tom 3 Center
+44
+43 FloorTom 1 Center
+42
+41 
+40 
+39 
+38 Snare Center
+37 
+36 Kick Open
+35 
+34 
+33 
+32
+31
+30 
+29
+28
+27
+26 Hat Open Edge 3
+25 Hat Open Edge 2
+24 Hat Open Edge 1
+23
+22 Hat Closed Edge
+21 Hat Closed Pedal
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
