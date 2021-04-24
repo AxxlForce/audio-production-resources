@@ -21,15 +21,42 @@ config_get()
     printf -- "%s" "${val}";
 }
 
-function pushProject()
+pushProject()
 {
-	echo TODO
+	if [ ! -d "$destination" ]; then
+  		echo "$1 not found at $3"
+	fi
+
+	echo
+	echo "are you sure yo want to push"
+	echo
+	echo "${GREEN}$4/$1${NC}"
+	echo
+	echo "into"
+	echo
+	echo "${RED}${BOLD}$2:$3/$1${NC}${NORM}?"
+
+	read -p "[y/n]" -n 1 -r
+	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+		echo
+	  echo "abort by user..."
+	  exit 0
+	fi
+
+	echo
+	echo
+	echo "pushing project $1 from $4 io $2:$3"
+	echo
+
+	# source needs trailing slash
+	source="'$4/$1/'"
+	destination="$2:\"'$3/$1'\""
+
+	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
 }
 
-function pullProject()
+pullProject()
 {
-	destination="$4/$1"
-
 	if [ ! -d "$destination" ]; then
   		echo "$1 not found at $3"
 	fi
@@ -41,7 +68,7 @@ function pullProject()
 	echo
 	echo "into"
 	echo
-	echo "${RED}${BOLD}$destination${NC}${NORM}?"
+	echo "${RED}${BOLD}$4/$1${NC}${NORM}?"
 
 	read -p "[y/n]" -n 1 -r
 	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -55,12 +82,14 @@ function pullProject()
 	echo "pulling project $1 from $2:$3 into $4"
 	echo
 
+	# source needs trailing slash
 	source="$2:\"'$3/$1/'\""
+	destination="'$4/$1'"
 
-  	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "'$destination'" --progress
+  	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
 }
 
-function usage()
+usage()
 {
 	echo
 	echo "USAGE"
@@ -69,7 +98,7 @@ function usage()
 	exit 1
 }
 
-function check_configuration()
+check_configuration()
 {
 	wip_remote_host="$(config_get wip_remote_host | sed 's:/*$::')"
 	if [ "$wip_remote_host" == "__UNDEFINED__" ]; then
@@ -108,8 +137,6 @@ while [ "$1" != "" ]; do
 	            usage
 	            ;;
 	        pull)
-				echo "$value"
-
 				if [ -z "$value" ]; then
 				    echo "no project specified"
 				    usage
@@ -126,8 +153,8 @@ while [ "$1" != "" ]; do
 				fi
 
 	            check_configuration
-	            pushProject
-	            echo push
+	            pushProject $value "$wip_remote_host" "$wip_remote_path" "$wip_local_path"
+	            exit 0
 	            ;;
 			*)
 				echo "ERROR: unknown parameter \"$param\""
@@ -138,17 +165,3 @@ while [ "$1" != "" ]; do
 	shift
 
 done
-
-
-
-
-
-
-
-
-
-
-
-
-
-
