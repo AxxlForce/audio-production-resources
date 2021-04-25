@@ -1,0 +1,188 @@
+#!/bin/sh
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+BOLD=$(tput bold)
+NORM=$(tput sgr0)
+undefined='n/a'
+config_file_path='.config/reasync/locations.cfg'
+
+config_read_file() 
+{
+    (grep -E "^${2}=" -m 1 "${1}" 2>/dev/null || echo "VAR=$undefined") | head -n 1 | cut -d '=' -f 2-;
+}
+
+config_get() 
+{
+    local val="$(config_read_file "$HOME/$config_file_path" "${1}")";
+ 
+    printf -- "%s" "${val}";
+}
+
+usage()
+{
+	echo "Usage: reasync [-h] [--help] [pull project_name] [push project_name]"
+	exit 1
+}
+
+print_example_config()
+{
+	echo; echo "create ~/$config_file_path containing the following information: "; echo
+	echo "wip_remote_host=diskstation"
+	echo "wip_remote_path=/volume1/Öffentlich/Audio Production/WIP"
+	echo "wip_local_path=/Volumes/Storage/REAPER Media/WIP"; echo
+}
+
+check_config()
+{
+	wip_remote_host="$(config_get wip_remote_host | sed 's:/*$::')"
+	wip_remote_path="$(config_get wip_remote_path | sed 's/[ \t]*$//;s:/*$::')"
+	wip_local_path="$(config_get wip_local_path | sed 's/[ \t]*$//;s:/*$::')"
+
+	if [ "$wip_remote_path" == "$undefined" ] || [ "$wip_local_path" == "$undefined" ]; then
+		echo "${RED}locations are not configured properly${NC}"
+		print_example_config
+		exit 1
+	fi
+}
+
+help()
+{
+	echo "${GREEN}${BOLD}"
+
+cat <<'EOF'                                      
+  _ __ ___  __ _ ___ _   _ _ __   ___ 
+ | '__/ _ \/ _` / __| | | | '_ \ / __|
+ | | |  __/ (_| \__ \ |_| | | | | (__ 
+ |_|  \___|\__,_|___/\__, |_| |_|\___|
+                      __/ |           
+                     |___/            
+EOF
+
+	echo "${NC}${NORM}"
+
+	check_config
+
+	echo "this script can be used to pull and push reaper projects to a remote utilizing rsync via ssh"; echo
+	echo "currently configured locations:"
+	echo "remote: ${GREEN}$wip_remote_host:$wip_remote_path${NC}"
+	echo "local: ${GREEN}$wip_local_path${NC}"; echo
+}
+
+formatRemote()
+{
+	local host=$1
+	local path=$2
+	local project=$3
+
+	# source needs trailing slash
+	if [ "$4" == true ]; then
+		project="$project/"
+	fi
+
+	if [ "$host" == "$undefined" ]; then
+		echo "'$path/$project'"
+		return
+	fi
+
+	echo "$host:\"'$path/$project'\""
+}
+
+pullProject()
+{
+	local source=$(formatRemote "$2" "$3" "$1" true)
+	local destination="'$4/$1'"
+
+	echo; echo "are you sure yo want to pull"
+	echo
+	echo "${GREEN}$source${NC}"
+	echo
+	echo "into"
+	echo
+	echo "${RED}${BOLD}$destination${NORM}?"
+
+	read -p "[y/n]" -n 1 -r
+	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+		echo
+	  echo "abort by user..."
+	  exit 0
+	fi
+
+	echo; echo; echo "pulling project $1..."; echo
+
+  	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
+}
+
+pushProject()
+{
+	# source needs trailing slash
+	local source="'$4/$1/'"
+	local destination=$(formatRemote "$2" "$3" "$1")
+
+	echo; echo "are you sure yo want to push"
+	echo
+	echo "${GREEN}$source${NC}"
+	echo
+	echo "into"
+	echo
+	echo "${RED}${BOLD}$destination${NC}${NORM}?"
+
+	read -p "[y/n]" -n 1 -r
+	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+		echo
+	  echo "abort by user..."
+	  exit 0
+	fi
+
+	echo; echo;	echo "pushing project $1..."; echo
+
+	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
+}
+
+if [ $# -eq 0 ]; then
+    echo "no arguments provided"
+    usage
+fi
+
+while [ "$1" != "" ]; do
+    param=`echo $1 | awk -F= '{print $1}'`
+    value=`printf "%s\n" $1 | sed 's/^[^=]*=//g'`
+    if [ "$value" = "$param" ]; then
+        shift
+        value=$1
+    fi
+
+	case $param in
+	        -h | --help)
+	            help
+	            ;;
+	        pull)
+				if [ -z "$value" ]; then
+				    echo "no project specified"
+				    usage
+				fi
+
+				check_config
+				pullProject $value "$wip_remote_host" "$wip_remote_path" "$wip_local_path"
+				exit 0
+	            ;;
+	        push)
+				if [ -z "$value" ]; then
+				    echo "no project specified"
+				    usage
+				fi
+
+				check_config
+	            pushProject $value "$wip_remote_host" "$wip_remote_path" "$wip_local_path"
+	            exit 0
+	            ;;
+			*)
+				echo "ERROR: unknown parameter \"$param\""
+	            usage
+	            ;;
+	esac
+
+	shift
+
+done
