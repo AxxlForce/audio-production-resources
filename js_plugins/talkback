@@ -1,0 +1,34 @@
+desc:Talkback - mutes on play, rec and when audio exceeds threshold
+
+slider1:-12<-60,12,1>Mute threshold (dB)
+slider2:3<0,50,1>RMS size (ms)
+slider3:750<0,2000,1>Unmute release (ms)
+
+@init
+scale = log( 10.0 ) * 0.05;   
+pos = RMS_tot = 0;
+
+@slider
+threshold = exp( slider1 * scale );
+RMS_buf_size = slider2 * srate * 0.001;
+release = slider3 * srate * 0.001;
+
+@sample
+mute = 0;
+
+//check play state
+play_state == 1 || play_state == 5 ? mute = 1;
+
+//calculate RMS
+this_spl = max( abs(spl0), abs(spl1) );
+tot_RMS = tot_RMS - RMS_buf[ pos ] + this_spl;
+RMS_buf[ pos ] = this_spl;
+pos += 1; pos > RMS_buf_size ? pos = 0;
+
+//check RMS against threshold
+tot_RMS / RMS_buf_size > threshold ? mute = 1;
+
+mute ? gain = 0 : gain = min( 1, gain + 1 / release );
+
+spl0 *= gain;
+spl1 *= gain;
