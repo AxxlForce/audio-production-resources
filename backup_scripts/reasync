@@ -109,7 +109,7 @@ pullProject()
 	  exit 0
 	fi
 
-	echo; echo; echo "pulling project $1..."; echo
+	echo; echo "${BOLD}"; echo "pulling project $1..."; echo "${NORM}"
 
   	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
 }
@@ -135,8 +135,12 @@ pushProject()
 	  exit 0
 	fi
 
-	echo; echo;	echo "pushing project $1..."; echo
+	# create backup on remote
+	echo; echo "${BOLD}"; echo "creating project file(s) backup on remote... ${NORM}"
+	eval ssh "$2" "'cd \"$3/$1\"; zip \"\$(date +'%F_%H%M%S')_backup.zip\" *.RPP'"
 
+	# push
+	echo "${BOLD}"; echo "pushing project $1..."; echo "${NORM}"
 	eval rsync -rltDOz --progress --include='*.RPP' --include='*.rpp' --include='*.wav' --include='*/' --exclude='*' "$source" "$destination" --progress
 }
 
