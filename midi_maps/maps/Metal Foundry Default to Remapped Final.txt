@@ -1,0 +1,128 @@
+0	(0)		
+0	(1)		
+0	(2)		
+0	(3)		
+0	(4)		
+0	(5)		
+0	(6)		
+0	(7)		
+0	(8)		
+0	(9)		
+0	(10)		
+0	(11)		
+100	(12)	C	[HAT] Open Tip 1
+99	(13)	C#	[HAT] Open Tip 2
+98	(14)	D	[HAT] Open Tip 3
+97	(15)	D#	[HAT] Open Tip 4
+96	(16)	E	[HAT] Open Tip 5
+103	(17)	F	[HAT] Open 4
+92	(18)	F#	[HAT] Trig
+91	(19)	G	[HAT] TipTrig
+0	(20)		
+0	(21)		
+112	(22)	A#	[HAT] Closed Edge
+94	(23)	B	[HAT] Open Pedal 
+106	(24)	C	[HAT] Open 1
+0	(25)		
+104	(26)	D	[HAT] Open 3
+0	(27)		
+0	(28)		
+0	(29)		
+59	(30)	F#	[CYM 4] Crashed
+0	(31)		
+53	(32)	G#	[CYM 6] Crashed
+0	(33)		
+0	(34)		
+0	(35)		
+127	(36)	C	[KIK] Right
+119	(37)	C#	[SNR] Sidestick
+125	(38)	D	[SNR] Center
+115	(39)	D#	[SNR] Ruffs
+122	(40)	E	[SNR] Rimshot
+85	(41)	F	[FTOM 2] Center
+111	(42)	F#	[HAT] Tip Closed
+89	(43)	G	[FTOM 1] Center
+93	(44)	G#	[HAT] Pedal
+88	(45)	A	[FTOM 1] Alias
+105	(46)	A#	[HAT] Open 2
+80	(47)	B	[RTOM 1] Alias
+82	(48)	C	[RTOM 1] Center
+65	(49)	C#	[CYM 2] Crashed
+81	(50)	D	[RTOM 1] Alias
+77	(51)	D#	[RID 1] Ride
+68	(52)	E	[CYM 1] Crashed
+76	(53)	F	[RID 1] Bell
+64	(54)	F#	[CYM 2] Muted
+62	(55)	G	[CYM 3] Crashed
+75	(56)	G#	[RID 1] Bell
+56	(57)	A	[CYM 5] Crashed
+55	(58)	A#	[CYM 5] Muted
+74	(59)	B	[RID 1] Edge
+102	(60)	C	[HAT] Open 5 
+0	(61)		
+110	(62)	D	[HAT] Tight Edge
+109	(63)	D#	[HAT] Tight Tip
+0	(64)		
+108	(65)	F	[HAT] Seq Hits
+124	(66)	F#	[SNR] Muted
+118	(67)	G	[SNR] CountIns
+0	(68)		
+114	(69)	A	[SNR] Flams
+116	(70)	A#	[SNR] Rolls
+121	(71)	B	[SNR] Rim Only
+0	(72)		
+84	(73)	C#	[FTOM 2] Rimshot
+0	(74)		
+87	(75)	D#	[FTOM 1] Rimshot
+0	(76)		
+0	(77)		
+0	(78)		
+0	(79)		
+79	(80)	G#	[RTOM 1] Rimshot
+0	(81)		
+0	(82)		
+67	(83)	B	[CYM 1] Muted
+72	(84)	C	[RID 2] Ride
+71	(85)	C#	[RID 2] Bell
+70	(86)	D	[RID 2] Edge
+0	(87)		
+0	(88)		
+0	(89)		
+0	(90)		
+0	(91)		
+0	(92)		
+0	(93)		
+0	(94)		
+61	(95)	B	[CYM 3] Muted
+0	(96)		
+0	(97)		
+0	(98)		
+0	(99)		
+0	(100)		
+0	(101)		
+0	(102)		
+0	(103)		
+0	(104)		
+0	(105)		
+58	(106)	A#	[CYM 4] Muted
+0	(107)		
+0	(108)		
+0	(109)		
+0	(110)		
+0	(111)		
+0	(112)		
+0	(113)		
+0	(114)		
+0	(115)		
+0	(116)		
+0	(117)		
+52	(118)	A#	[CYM 6] Muted
+0	(119)		
+0	(120)		
+0	(121)		
+0	(122)		
+0	(123)		
+0	(124)		
+0	(125)		
+0	(126)		
+0	(127)		
