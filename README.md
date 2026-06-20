@@ -1,17 +1,21 @@
 # Reaper Shortcuts
 
+Import them by 
+
+Actions -> Show action list... -> Key Map... -> Import shortcuts/custom actions, import all sections...
+
+Overview:
+```
 C: Toggle metronome
-
 Cmd+Shift+L: Cleanup
-
 Opt+S: Drum Split
-
 Shift+Ctrl+T: Tom Fade
+```
 
-# Link in custom JS plugins
+# Install custom plugins, scripts etc.
 
 ```
-ln -s "$(pwd)/js_plugins" "/Users/$USER/Library/Application Support/REAPER/Effects/from_git"
+sh ./install.sh
 ```
 
 # Talkback
@@ -23,4 +27,3 @@ Select "Record: disable (input monitoring only)" when right clicking on the trac
 ## Use talkback plugin
 
 Insert JS Plugin "Talkback" to track
-
