@@ -4,8 +4,7 @@ ACT 0 0 "0e72a729575a4d51915f514eb32668cd" "Custom: Drum Split" 40528 _SWS_AWSEL
 SCR 4 0 RS1cbf05b0c4f875518496f34a5ce45adefe05cb67 "Custom: Default_6.0_theme_adjuster.lua" Cockos/Default_6.0_theme_adjuster.lua
 ACT 0 0 "03eb513ede624a408a845aaf058a0c64" "Custom: Collapse" _SWS_SELALLPARENTS _SWS_COLLAPSE
 ACT 0 0 "de3a051e7d5c4fc98eaa17a7beb3e6fb" "Custom: Cleanup" 40182 41348 40289
-ACT 0 0 "cb842bebaac14b348585caf0ba3188d2" "Custom: Tom Fade" _SWS_DEFAULTFADES 41523
-SCR 4 0 RS37fde47f4f581f953d1bc145140db66143ea7059 "Custom: Tom Fade.lua" "/Users/alex/Develop/axxl-reascripts/Tom Fade.lua"
+SCR 4 0 RS37fde47f4f581f953d1bc145140db66143ea7059 "Custom: Tom Fade.lua" "/Users/alex/Library/Application Support/REAPER/Scripts/as/Tom Fade.lua"
 KEY 5 52 0 0
 KEY 5 68 40129 0
 KEY 1 81 40316 0

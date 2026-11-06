@@ -1,0 +1,524 @@
+desc:EneMidi at the Gates (fork by AxxlForce, original by Geraint Luff)
+
+in_pin:Left
+in_pin:Right
+out_pin:Left
+out_pin:Right
+
+slider1:preopen_ms=0<0,50,0.1>-Pre-open (ms)
+slider2:attack_ms=1<0,100,1>-Attack (ms)
+slider3:hold_ms=50<0,300,1>-Hold (ms)
+slider4:release_ms=100<0,300,1>-Release (ms)
+slider5:release_curve=0<0,1,1{exponential,linear}>-Release Curve
+slider6:max_vel=127<1,127,1>-Maximum velocity
+slider7:upside_down=0<0,1,1{gate-on,gate-off}>-Default state
+slider8:channel_filter=0<0,16,1{all,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}>-MIDI Channel
+
+import ui-lib.jsfx-inc
+import synth-framework.jsfx-inc
+
+@init
+
+gfx_ext_retina = 1;
+
+freemem = 0;
+freemem = synth_setup(freemem, 1);
+freemem = ui_setup(freemem);
+
+// Envelope
+env = 0;
+env_target = 0;
+
+gate_state = 0;
+gate_hold_samples = 0;
+gate_release_samples = 0;
+
+// ----------------------------------------------------------------------
+// Active-note tracking
+//
+// We remember the notes which were active on the previous sample.
+// A note which appears in the current set but wasn't present before
+// is treated as a new Note-On.
+//
+// Note-Off is deliberately ignored.
+// ----------------------------------------------------------------------
+max_tracked_notes = 128;
+
+previous_notes = freemem;
+freemem += max_tracked_notes;
+
+current_notes = freemem;
+freemem += max_tracked_notes;
+
+previous_note_count = 0;
+
+// ----------------------------------------------------------------------
+// Lookahead buffer
+// ----------------------------------------------------------------------
+max_lookahead_samples = ceil(srate * 0.050) + 2;
+
+lookahead_buf_l = freemem;
+lookahead_buf_r = lookahead_buf_l + max_lookahead_samples;
+freemem = lookahead_buf_r + max_lookahead_samples;
+
+lookahead_pos = 0;
+last_preopen_samples = 0;
+
+
+@block
+
+channel_filter_enabled = !!channel_filter;
+channel_filter_channel = channel_filter - 1;
+
+synth_block();
+
+attack_samples = attack_ms * 0.001 * srate;
+attack_ratio = attack_samples ? 1 - exp(-1 / attack_samples) : 1;
+
+release_samples = release_ms * 0.001 * srate;
+release_ratio = release_samples ? 1 - exp(-1 / release_samples) : 1;
+
+hold_samples = hold_ms * 0.001 * srate;
+
+preopen_samples = preopen_ms * 0.001 * srate;
+preopen_samples = min(preopen_samples, max_lookahead_samples - 2);
+
+// changing lookahead clears the buffer
+abs(preopen_samples - last_preopen_samples) > 0.001 ? (
+
+  i = 0;
+
+  loop(max_lookahead_samples,
+
+    lookahead_buf_l[i] = 0;
+    lookahead_buf_r[i] = 0;
+
+    i += 1;
+  );
+
+  lookahead_pos = 0;
+);
+
+last_preopen_samples = preopen_samples;
+
+
+@sample
+
+synth_sample();
+
+// ----------------------------------------------------------------------
+// find currently active notes
+// ----------------------------------------------------------------------
+current_note_count = 0;
+
+note = synth_note_first();
+
+while (note > 0) (
+
+  channel_filter_enabled && synth_channel(note) != channel_filter_channel ? (
+    synth_stop(note);
+
+  ) : (
+
+    current_notes[current_note_count] = note;
+    current_note_count += 1;
+  );
+
+  note = synth_note_next(note);
+);
+
+
+// ----------------------------------------------------------------------
+// Detect Note-On
+//
+// A note is new if its handle wasn't present in the previous sample.
+// Note-Off is NOT used.
+//
+// If several notes arrive simultaneously, the strongest velocity wins.
+// ----------------------------------------------------------------------
+new_note = 0;
+new_velocity = 0;
+
+i = 0;
+
+loop(current_note_count,
+
+  this_note = current_notes[i];
+
+  found = 0;
+  j = 0;
+
+  loop(previous_note_count,
+
+    previous_notes[j] == this_note ? (
+      found = 1;
+    );
+
+    j += 1;
+  );
+
+  !found ? (
+
+    this_velocity = synth_velocity(this_note);
+
+    this_velocity > new_velocity ? (
+      new_velocity = this_velocity;
+      new_note = this_note;
+    );
+  );
+
+  i += 1;
+);
+
+
+// ----------------------------------------------------------------------
+// start envelope on Note-On
+// ----------------------------------------------------------------------
+
+new_note ? (
+
+  env_target = min(1, new_velocity / max_vel);
+
+  gate_state = 1;
+
+  gate_hold_samples = hold_samples;
+  gate_release_samples = release_samples;
+
+);
+
+
+// ----------------------------------------------------------------------
+// Envelope state machine
+//
+// 0 = closed
+// 1 = attack
+// 2 = hold
+// 3 = release
+// ----------------------------------------------------------------------
+
+gate_state == 1 ? (
+
+  env < env_target ? (
+
+    env += (env_target - env) * attack_ratio;
+
+  ) : (
+
+    env = env_target;
+    gate_state = 2;
+  );
+);
+
+
+// Hold is measured after the attack has reached the target.
+gate_state == 2 ? (
+
+  gate_hold_samples -= 1;
+
+  gate_hold_samples <= 0 ? (
+
+    // Capture the ACTUAL envelope level at release start.
+    release_start_env = env;
+
+    gate_release_samples = release_samples;
+
+    gate_state = 3;
+  );
+);
+
+
+// ----------------------------------------------------------------------
+// Release
+// ----------------------------------------------------------------------
+
+gate_state == 3 ? (
+
+  release_curve == 0 ? (
+
+    // Exponential release.
+    env += (0 - env) * release_ratio;
+
+    env < 0.00001 ? (
+      env = 0;
+      gate_state = 0;
+    );
+
+  ) : (
+
+    // Exact linear release.
+    gate_release_samples > 0 ? (
+
+      env -= release_start_env / release_samples;
+
+      gate_release_samples -= 1;
+
+      gate_release_samples <= 0 ? (
+        env = 0;
+        gate_state = 0;
+      );
+
+    ) : (
+
+      env = 0;
+      gate_state = 0;
+
+    );
+  );
+);
+
+
+// ----------------------------------------------------------------------
+// Save current notes for next sample
+// ----------------------------------------------------------------------
+
+i = 0;
+
+loop(current_note_count,
+
+  previous_notes[i] = current_notes[i];
+
+  i += 1;
+);
+
+previous_note_count = current_note_count;
+
+
+// ----------------------------------------------------------------------
+// Audio path
+// ----------------------------------------------------------------------
+
+preopen_samples > 0.001 ? (
+
+  // Write incoming audio.
+  lookahead_buf_l[lookahead_pos] = spl0;
+  lookahead_buf_r[lookahead_pos] = spl1;
+
+  // Read delayed audio.
+  read_pos = lookahead_pos - preopen_samples;
+
+  read_pos < 0 ? (
+    read_pos += max_lookahead_samples;
+  );
+
+  read_pos2 = read_pos + 1;
+
+  read_pos2 >= max_lookahead_samples ? (
+    read_pos2 -= max_lookahead_samples;
+  );
+
+  frac = read_pos - floor(read_pos);
+  read_pos_i = floor(read_pos);
+
+  delayed_l =
+    lookahead_buf_l[read_pos_i] +
+    (lookahead_buf_l[read_pos2] -
+     lookahead_buf_l[read_pos_i]) * frac;
+
+  delayed_r =
+    lookahead_buf_r[read_pos_i] +
+    (lookahead_buf_r[read_pos2] -
+     lookahead_buf_r[read_pos_i]) * frac;
+
+  lookahead_pos += 1;
+
+  lookahead_pos >= max_lookahead_samples ? (
+    lookahead_pos = 0;
+  );
+
+  upside_down ? (
+
+    spl0 = delayed_l * (1 - env);
+    spl1 = delayed_r * (1 - env);
+
+  ) : (
+
+    spl0 = delayed_l * env;
+    spl1 = delayed_r * env;
+
+  );
+
+) : (
+
+  // Zero-latency path.
+
+  upside_down ? (
+
+    spl0 *= (1 - env);
+    spl1 *= (1 - env);
+
+  ) : (
+
+    spl0 *= env;
+    spl1 *= env;
+
+  );
+);
+
+
+@gfx 960 200
+
+function labelled_dial(value, low, high, bias, label, format) (
+
+  ui_push_height(50);
+    value = control_dial(value, low, high, bias);
+  ui_pop();
+
+  ui_push_above(50);
+    ui_text(label);
+  ui_pop();
+
+  ui_push_below(50);
+    ui_textnumber(value, format);
+  ui_pop();
+
+  value;
+);
+
+
+function labelled_switch(value, label, valueText) (
+
+  ui_push_height(35);
+
+  ui_push_width(60);
+    value = control_switch(value);
+  ui_pop();
+
+  ui_pop();
+
+  ui_push_above(50);
+    ui_text(label);
+  ui_pop();
+
+  ui_push_below(50);
+    ui_text(valueText);
+  ui_pop();
+
+  value;
+);
+
+
+function labelled_selector(value, label, valueText, next, prev, width) (
+  ui_push_heighttext(-1);
+    ui_pad(-1, 0);
+    ui_push_width(width);
+      value = control_selector(value, valueText, next, prev);
+    ui_pop();
+  ui_pop();
+
+  ui_push_above(50);
+    ui_text(label);
+  ui_pop();
+
+  value;
+);
+
+
+control_start("main", "tron");
+
+ui_screen() == "main" ? (
+
+  control_navbar("EneMidi at the Gates", -1, -1);
+
+  ui_pad();
+
+  ui_push_height(150);
+
+    control_group("");
+
+    ui_split_leftratio(1/8);
+
+      preopen_ms = labelled_dial(
+        preopen_ms,
+        0,
+        50,
+        3,
+        "Pre-open",
+        "%0.1fms"
+      );
+
+    ui_split_next();
+
+      attack_ms = labelled_dial(
+        attack_ms,
+        0,
+        100,
+        3,
+        "Attack",
+        "%ims"
+      );
+
+    ui_split_next();
+
+      hold_ms = labelled_dial(
+        hold_ms,
+        0,
+        300,
+        3,
+        "Hold",
+        "%ims"
+      );
+
+    ui_split_next();
+
+      release_ms = labelled_dial(
+        release_ms,
+        0,
+        300,
+        3,
+        "Release",
+        "%ims"
+      );
+
+    ui_split_next();
+
+      max_vel = labelled_dial(
+        max_vel,
+        1,
+        127,
+        0,
+        "Max Velocity",
+        "%i"
+      );
+
+    ui_split_next();
+
+      release_curve = labelled_selector(
+        release_curve,
+        "Release Curve",
+        release_curve ? "linear" : "exponential",
+        (release_curve + 1) % 2,
+        (release_curve + 1) % 2,
+        160
+      );
+
+      max_vel = max(1, floor(max_vel + 0.5));
+
+    ui_split_next();
+
+      channel_filter > 0 ? (
+        sprintf(#channel_text, "%i", channel_filter);
+      ) : (
+        strcpy(#channel_text, "all");
+      );
+
+      channel_filter = labelled_selector(
+        channel_filter,
+        "Channel",
+        #channel_text,
+        (channel_filter + 1) % 17,
+        (channel_filter + 16) % 17,
+        70
+      );
+      
+    ui_split_next();
+
+      upside_down = labelled_switch(
+        upside_down,
+        "Mode",
+        upside_down ? "mute" : "gate"
+      );
+
+  ui_pop();
+  ui_pop();
+
+) : control_system();
